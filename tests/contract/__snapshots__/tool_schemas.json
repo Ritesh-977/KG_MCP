@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Find what files/functions depend on (or are depended on by) a given file.\nUse this to answer 'what breaks if I edit X?'. Returns imported_by, imports,\ncallers, calls, and external symbols (stdlib/npm).",
+    "name": "find_file_dependencies"
+  },
+  {
+    "description": "Get detailed information about a single node (function/file) by its id.\nReturns name, kind, path, and line range. Use search_nodes to find the node id first.",
+    "name": "get_node_detail"
+  },
+  {
+    "description": "List files and directories under a path in a repository.",
+    "name": "get_repo_structure"
+  },
+  {
+    "description": "Confirm a repository's graph exists and return file/function counts.",
+    "name": "init_repository_node"
+  },
+  {
+    "description": "List all ingested repositories in the graph database.",
+    "name": "list_repos"
+  },
+  {
+    "description": "Search for functions or files by name. Use this before find_file_dependencies\nor get_node_detail to find the exact path or node id.",
+    "name": "search_nodes"
+  }
+]

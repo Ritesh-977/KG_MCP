@@ -1,0 +1,14 @@
+services:
+  neo4j:
+    image: neo4j:5-community
+    ports:
+      - "7687:7687"   # bolt
+      - "7474:7474"   # browser UI
+    environment:
+      NEO4J_AUTH: neo4j/changeme123
+      NEO4J_PLUGINS: '["apoc"]'
+    volumes:
+      - neo4j_data:/data
+
+volumes:
+  neo4j_data:
